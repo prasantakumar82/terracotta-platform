@@ -44,7 +44,7 @@ import static java.lang.System.lineSeparator;
 
 @Parameters(commandNames = "export", commandDescription = "Export a cluster configuration")
 @DeprecatedUsage("export -s <hostname[:port]> [-f <config-file>] [-i] [-r]")
-@Usage("export -connect-to <hostname[:port]> [-config-file <output-config-file>] [-include-defaults] [-runtime]")
+@Usage("export -connect-to <hostname[:port]> [-output-file <config-file>] [-include-defaults] [-runtime]")
 public class ExportCommand extends RemoteCommand {
   @DeprecatedParameter(names = "-s", required = true, description = "Node to connect to", converter = InetSocketAddressConverter.class)
   @Parameter(names = "-connect-to", required = true, description = "Node to connect to", converter = InetSocketAddressConverter.class)

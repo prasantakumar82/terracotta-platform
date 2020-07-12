@@ -5,6 +5,6 @@ import org.junit.Test;
 public class ConfigToolTest {
   @Test
   public void testBasicCommand() {
-    ConfigTool.main("activate", "-h");
+    ConfigTool.main("activate", "get");
   }
 }
